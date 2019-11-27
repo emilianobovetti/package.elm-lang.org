@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - 13
+
+cache:
+  yarn: true
+
+before_install:
+  - yarn global add netlify-cli
+
+script:
+  - make
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: sh deploy.sh
+  on:
+    branch: master
+
+addons:
+  apt:
+    update: true

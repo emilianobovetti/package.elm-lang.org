@@ -69,10 +69,6 @@ pre {
   text-overflow: ellipsis;
 }
 
-.header > a:first-of-type {
-  margin-right: 20px;
-}
-
 .header a:hover {
   color: #333333;
 }
